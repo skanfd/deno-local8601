@@ -1,4 +1,4 @@
-export default function local8601(date?: Date): string {
+export function local8601(date?: Date): string {
   const d = date || new Date();
   const value = d.valueOf();
   const offset = -d.getTimezoneOffset();
